@@ -62,5 +62,5 @@ io.on("connection", (socket) => {
 });
 
 server.listen("8080", () => {
-  console.log("server running at https://68b87f0457c4330081b35a6f--haglowchat.netlify.app/");
+  console.log("server running at https://68b87f0457c4330081b35a6f--haglowchat.netlify.app");
 });
