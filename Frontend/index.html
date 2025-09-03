@@ -25,12 +25,36 @@
             />
           </div>
           <div class="form-group">
-            <label for="profilePic">Profile Picture URL (Optional)</label>
+            <label for="profilePic">Profile Picture (Optional)</label>
             <input
               type="url"
               id="profilePic"
               name="profilePic"
               placeholder="https://example.com/avatar.jpg"
+            />
+            <div
+              style="
+                margin: 10px 0;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 14px;
+              "
+            >
+              OR
+            </div>
+            <input
+              type="file"
+              id="profilePicFile"
+              accept="image/*"
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 2px dashed rgba(255, 215, 0, 0.3);
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.05);
+                color: rgba(255, 255, 255, 0.8);
+                cursor: pointer;
+              "
             />
           </div>
           <div class="profile-preview">
@@ -52,72 +76,13 @@
         <aside class="sidebar">
           <div class="sidebar-header">
             <h3>Online Users</h3>
-            <div class="online-count" id="onlineCount">3 users online</div>
+            <div class="online-count" id="onlineCount"></div>
           </div>
-          <div class="users-list" id="usersList">
-            <!-- Sample users - replace with dynamic content -->
-            <div class="user-item">
-              <div class="user-avatar">JD</div>
-              <div class="user-info">
-                <h4>John Doe</h4>
-                <span class="user-status">Online</span>
-              </div>
-            </div>
-            <div class="user-item">
-              <div class="user-avatar">AS</div>
-              <div class="user-info">
-                <h4>Alice Smith</h4>
-                <span class="user-status">Online</span>
-              </div>
-            </div>
-            <div class="user-item">
-              <div class="user-avatar">BJ</div>
-              <div class="user-info">
-                <h4>Bob Johnson</h4>
-                <span class="user-status">Online</span>
-              </div>
-            </div>
-          </div>
+          <div class="users-list" id="usersList"></div>
         </aside>
 
         <section class="chat-area">
-          <div class="messages-container" id="messagesContainer">
-            <!-- Sample messages - replace with dynamic content -->
-            <div class="message">
-              <div class="message-avatar">JD</div>
-              <div class="message-content">
-                <div class="message-header">
-                  <span class="message-author">John Doe</span>
-                  <span class="message-time">10:30 AM</span>
-                </div>
-                <div class="message-text">Hey everyone! How's it going?</div>
-              </div>
-            </div>
-            <div class="message">
-              <div class="message-avatar">AS</div>
-              <div class="message-content">
-                <div class="message-header">
-                  <span class="message-author">Alice Smith</span>
-                  <span class="message-time">10:32 AM</span>
-                </div>
-                <div class="message-text">
-                  Pretty good! Just working on some projects. What about you?
-                </div>
-              </div>
-            </div>
-            <div class="message">
-              <div class="message-avatar">BJ</div>
-              <div class="message-content">
-                <div class="message-header">
-                  <span class="message-author">Bob Johnson</span>
-                  <span class="message-time">10:35 AM</span>
-                </div>
-                <div class="message-text">
-                  Same here! This chatroom looks really nice btw 👍
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="messages-container" id="messagesContainer"></div>
 
           <div class="input-container">
             <div class="input-area">
