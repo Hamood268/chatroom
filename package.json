@@ -2,7 +2,7 @@
   "name": "glowchat",
   "version": "1.0.0",
   "description": "A real-time chat application built with Node.js, Socket.IO, and vanilla JavaScript.",
-  "main": "./Backend/index.js",
+  "main": "./Backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
