@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io('https://haglowchat.netlify.app/');
 
 // Login form handling
 const loginForm = document.getElementById("loginForm");
